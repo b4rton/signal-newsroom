@@ -2,7 +2,7 @@
 ## Working draft 8/16/17
 ### By Barton Gellman
    
-Journalists have made growing use of [Signal Private Messenger](https://whispersystems.org/) as a channel for confidential sources to make contact and share information. They can make a Signal dropbox more secure with a few precautions. Other precautions, which apply to news sources, are not covered here. 
+Journalists have made growing use of [Signal Private Messenger](https://whispersystems.org/) as a channel for confidential sources to make contact and share information. Simple precautions in the newsroom make for a much safer Signal dropbox. Sources may take their own additional precautions, not covered here. 
   
 ## Risks
 
@@ -19,21 +19,20 @@ A considered workflow in the newsroom can reduce those risks and limit the damag
 
 	a. *Dedicated smartphone*. Run the Signal app on a freshly wiped iPhone. (Android phones are harder to secure.) 
 	
-		i) Install iOS updates as soon as notice appears in the Settings app. 
-		ii) Do not store Contacts on the phone, even for Signal sources. It is much safer to keep them elsewhere. If you must store source telephone numbers, list them under non-revealing pseudonyms such as "Source A" and "Source B." But really, don't.
-		iii) Go through the Settings app to enhance privacy and security. Do NOT log into iCloud. (It will back up the Signal database.) Set a [longer numeric PIN](https://theintercept.com/2016/02/18/passcodes-that-can-defeat-fbi-ios-backdoor/) and turn ON "Erase Data" after 9 failed unlock attempts. Disable most or all options under Lock Screen Access. Set Auto-Lock to 30 seconds. Turn OFF TouchID and Location Services. Create a new Apple ID with a throwaway email; you'll need it to download Signal from the App Store. Say yes when Signal asks for access to the Microphone, Camera and (your empty) Contacts list.
-		iv) Install no software other than Signal. 
-		v) Do not use the iPhone for ordinary telephone calls, web browsing, email, taking or storing photos, or any other purpose. 
-		vi) If you place or receive a Signal video call, do not point your camera at anything that might reveal where you store the iPhone.
+	- Install iOS updates as soon as notice appears in the Settings app. 
+	- Do not store Contacts on the phone, even for Signal sources. It is much safer to keep them elsewhere. If you must store source telephone numbers, list them under non-revealing pseudonyms such as "Source A" and "Source B." But really, don't.
+	- Go through the Settings app to enhance privacy and security. Do NOT log into iCloud. (It will back up the Signal database.) Set a [longer numeric PIN](https://theintercept.com/2016/02/18/passcodes-that-can-defeat-fbi-ios-backdoor/) and turn ON "Erase Data" after 9 failed unlock attempts. Disable most or all options under Lock Screen Access. Set Auto-Lock to 30 seconds. Turn OFF TouchID and Location Services. Create a new Apple ID with a throwaway email; you'll need it to download Signal from the App Store. Say yes when Signal asks for access to the Microphone, Camera and (your empty) Contacts list.
+	- Install no software other than Signal. 
+	- Do not use the iPhone for ordinary telephone calls, web browsing, email, taking or storing photos, or any other purpose. 
+	- During Signal video calls, do not point your camera at anything that might reveal where you store the iPhone.
 	
 	b. *Dedicated computer*. Run Signal Desktop on a freshly wiped computer with the latest operating system. 
 	
-		i) Set the computer to download and install updates automatically.
-		ii) Turn on the built in firewall, with strictest settings. 
-		iii) Turn on local storage encryption -- FileVault on Mac, BitLocker on Windows. Choose a strong, random passphrase. [Don't bother](
-https://www.wsj.com/articles/the-man-who-wrote-those-password-rules-has-a-new-tip-n3v-r-m1-d-1502124118) with c@Ps&S6mb0l$. A randomly generated 7-word phrase is stronger and easier to type and remember. Purists want you to use [actual dice](http://world.std.com/~reinhold/diceware.html), but you probably won't, so let 1Password or LastPass make a strong passphrase. Even an [online generator](https://passwordcreator.org/diceware.html) is a lot better than trying to think of "random" words yourself.
-		iv) Install Chrome (Signal Desktop requires it) but do not use it for browsing.
-		v) Do not install or use any other software.
+	- Set the computer to download and install updates automatically.
+	- Turn on the built in firewall, with strictest settings. 
+	- Turn on local storage encryption -- FileVault on Mac, BitLocker on Windows. Choose a strong, random passphrase. [Don't bother](https://www.wsj.com/articles/the-man-who-wrote-those-password-rules-has-a-new-tip-n3v-r-m1-d-1502124118) with c@Ps&S6mb0l$. A randomly generated 7-word phrase is stronger and easier to type. Purists call for use of [actual dice](http://world.std.com/~reinhold/diceware.html), but you probably won't. So let 1Password or LastPass make a strong passphrase. In a pinch, even an [online generator](https://passwordcreator.org/diceware.html) is better than trying to think of "random" words yourself.
+	- Install Chrome (Signal Desktop requires it) but do not use it for browsing.
+	- Do not install or use any other software.
 	
 	c. Lock up the phone and computer as securely as possible when not in use.
 	
@@ -41,16 +40,16 @@ https://www.wsj.com/articles/the-man-who-wrote-those-password-rules-has-a-new-ti
 
 	a. On the iPhone Signal app, in the message list view, tap the gear icon at the upper left for Settings. 
 
-		i) Under Privacy settings, switch ON "Enable Screen Security" and switch OFF "iOS Call Integration." 
-		ii) Under Notification settings, set Show to "No name or message." 
-		iii) Each time you view a message from a source, tap the source's name or number at the top of the screen and turn ON "Disappearing Messages." Twelve hours is a reasonable default.
-		iv) Delete the entire message thread for each source as soon as you've saved the contents and the source's telephone number elsewhere. You don't need an existing thread to send or receive new messages.
+	- Under Privacy settings, switch ON "Enable Screen Security" and switch OFF "iOS Call Integration." 
+	- Under Notification settings, set Show to "No name or message." 
+	- Each time you view a message from a source, tap the source's name or number at the top of the screen and turn ON "Disappearing Messages." Twelve hours is a reasonable default.
+	- Delete the entire message thread for each source as soon as you've saved the contents and the source's telephone number elsewhere. You don't need an existing thread to send or receive new messages.
 		
 	b. On Signal Desktop
 
-		i) Tap the icon showing three stacked dots toward the top left of the message list. Choose Settings. Under Notifications, choose "Neither name nor message."
-		ii) Each time you view a message from a source, click the icon showing three dots on the top right of the window and turn ON "Disappearing Messages." 
-		iii) Delete the entire message thread for each source as soon as you've saved the contents and the source's telephone nmber elsewhere.
+	- Tap the icon showing three stacked dots toward the top left of the message list. Choose Settings. Under Notifications, choose "Neither name nor message."
+	- Each time you view a message from a source, click the icon showing three dots on the top right of the window and turn ON "Disappearing Messages." 
+	- Delete the entire message thread for each source as soon as you've saved the contents and the source's telephone nmber elsewhere. As on the iPhone app, you don't need an existing thread to send or receive new messages.
 
 3. **Use an isolated network.** 
 
