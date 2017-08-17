@@ -1,19 +1,21 @@
-# Using Signal as a Newsroom Dropbox
-## Working draft 8/16/17
-### By Barton Gellman
-   
-Journalists have made growing use of [Signal Private Messenger](https://whispersystems.org/), which runs on smartphones and desktop computers, as a newsroom dropbox. Confidential sources use this channel to make first contact, send information and develop ongoing relationships with journalists. Strong security comes built in with Signal, but additional precautions in the newsroom can make it safer for both sides. Confidential sources may take additional precautions, not covered here. 
+# Signal as a Newsroom Dropbox
+## By Barton Gellman
+
+*Comments and disputations welcome*
+
+Individual journalists have for some time been using [Signal Private Messenger](https://whispersystems.org/), which runs on most smartphones and desktop computers, for secure communications with their sources. In a more recent trend, news organizations have begun to repurpose Signal as a dropbox for the general public. Prominent display of a newsroom-wide Signal account number invites anyone with a confidential tip to make first contact, find the right journalist, send information, and develop an ongoing reporter-source relationship. Signal offers strong encryption and a measure of anonymity. Newsrooms can make it a safer channel with a few additional precautions. 
   
 ## Risks
 
-Signal makes voice and video calls, but its main use in newsgathering is for text messages and attached documents. These pose at least two kinds of risk.
+Signal makes voice and video calls, but newsroom use has focused mainly on text messages and documents sent as attachments. These pose at least three kinds of risk.
 
 1. **Malware.** Like email, Signal can transmit malicious attachments or web links. Sources may send malware unknowingly. If the newsroom's smartphone or PC is compromised, outsiders may be able to take control of the Signal account, send malware or false messages to sources, monitor communications without leaving obvious signs, or tunnel into any newsroom network that is reachable from the infected Signal device. 
-2. **Exposure of content.** Signal messages are encrypted in transit but decrypted upon receipt. Incautious handling on the newsroom side may allow outside eyes to read the contents or identify a source.
+2. **Exposure of content.** Signal messages are encrypted in transit but decrypted upon receipt. Incautious handling on the newsroom side may allow outside eyes to read Signal communications after they arrive.
+3. **Exposure of sources.** In either of the first two scenarios, an adversary may learn enough to identify a confidential source by name, telephone number or job description.
 
 ## Precautions
 
-These steps will reduce the risk and limit the damage of a successful intrusion into the Signal dropbox.
+A careful newsroom can reduce the risk and limit the damage of a successful intrusion into its Signal dropbox. Many of these precautions could do the same for journalists with individual Signal accounts.
 
 1. **Secure the devices used for Signal**. 
 
@@ -57,34 +59,34 @@ These steps will reduce the risk and limit the damage of a successful intrusion 
 	b. On iPhone, use mobile data. 
 	c. On the computer, use a dedicated mobile wifi hotspot or an Ethernet cable to a dedicated router.
 
-4. **Transfer attachments. Don't open them.** There is no risk in reading Signal text messages, but do not click any link or open any file attachment on the same device that retrieves them.
+4. **Don't click links or open attachments** on the smartphone or PC that operates the Signal account. Transfer them instead to another machine.
 
-	a. *Treat files and links received with Signal as malware.* Send them to another machine and open them there. 
+	a. *Treat links and attachments as malware.* It's essential to keep the Signal device pristine. 
 	
-	b. *Delete executable files upon receipt*. Those include extensions such as .exe, .sh, and .py. There are [many others](https://www.lifewire.com/list-of-executable-file-extensions-2626061).  
+	b. *Delete executable files upon receipt*. Trash any attachment with extension .exe, .sh, or .py. There are many others. If you don't recognize a file type, check [here](https://www.lifewire.com/list-of-executable-file-extensions-2626061).
 	
-	c. *Set up a second computer as a secure workstation.* Configure it like the first one, then add the minimum software required to view files in standard formats such as PDF and Office. If practical (see next paragraph), disconnect the computer from internal newsroom networks and the Internet.
+	c. *Set up a secure viewing workstation.* Configure and maintain a second computer like the first one (1b, above). Then install the bare minimum of additional software required to view standard file formats such as PDF and Office.
 		
-	d. *Move attachments securely to the workstation.* Once a file arrives on Signal, it is unencrypted. It cannot be safely transferred to another machine on an open channel such as email or Dropbox. In any case, you aren't running apps like those on the device that retrieves messages from the published Signal account.  
+	d. *Transfer attachments securely to the viewing workstation,* then delete the originals.
 	
-	- If you can place the secure workstation near the Signal Desktop machine, "airgap" the workstation. Switch off wifi, disconnect Ethernet cables, and consider removing the network hardware from the machine. Use an encrypted thumb drive or encrypted SD card to transfer incoming file attachments to the workstation. Reformat (erase) the thumb drive or SD card between uses. An SD card is safer. For maximum security, use an old digital camera or voice recorder to erase the SD card before and after each file transfer.
-	- If you cannot keep the workstation near the Signal Desktop machine, connect it to a dedicated network, as described above. Create a second, unlisted Signal account for the workstation. Forward file attachments from the public Signal account to the unlisted one.
+	- If you can place the workstation near the Signal Desktop machine, "airgap" the workstation. Switch off wifi, unplug the Ethernet cable, and consider removing the network hardware. When the newsroom Signal account receives a file attachment, move it to the workstation on an encrypted thumb drive. Reformat (erase) the thumb drive between uses. For better security, use an SD card instead. Erase it before and after each use with an old digital camera or voice recorder.
+	- If you cannot place the workstation near the Signal Desktop machine, connect the workstation to the Internet on a dedicated access point. Create a second, unlisted Signal account for the workstation. Forward file attachments from the public Signal account to the unlisted account.
 	
-5. **Options for safer viewing of attachments.** 
+5. **Open attachments with care** on the workstation, using one or more of these options. 
 
-	a. Use an "airgapped" workstation, as described above. 
-	b. Install a [Virtual Machine](https://lifehacker.com/5204434/the-beginners-guide-to-creating-virtual-machines-with-virtualbox) on the workstation. Switch off network access for the VM. Open attachments inside the VM, then use a "snapshot" to restore the VM to its original state. Remember to keep the VM software, including the guest operating system, up to date.
+	a. "Airgap" the workstation. An intruder cannot easily steal data from a machine that does not touch the Internet, even if the machine is compromised by malware. This is not an absolute defense, but it defeats many attacks.
+	b. Install a [Virtual Machine](https://lifehacker.com/5204434/the-beginners-guide-to-creating-virtual-machines-with-virtualbox) on the workstation. Keep the host machine air-gapped, or switch off network access for the guest VM. Take a snapshot of the guest VM in its original, clean state. Open attachments inside the VM, then restore the clean snapshot. Install software updates on the clean snapshot as they become available.
 	c. Before opening an attachment or clicking a link, check it against the [VirtusTotal](https://www.virustotal.com) database of known malicious files and sites.
-	d. [***With caveat***]: Open the attachment in Google Docs. This protects your workstation from malware, but exposes your confidential information to a subpoena or a thief who steals your login credentials.
+	d. [***With important caveat***]: Open the attachment in Google Docs. This protects your workstation from malware, but it places unencrypted data on Google servers. A subpoena or hacker might obtain it there. 
 	
-6. **Safely distribute information to colleagues.** When it comes time to share Signal content, save it in a safer format before allowing it onto a newsroom network.
+6. **Share information with colleagues in a safer format** to scrub potential malware.  
 
-	a. Print the document (on a non-networked printer). 
-	b. Copy and paste from an incoming Word or PDF attachment to a .TXT or .RTF file. 
-	c. Save information from a spreadsheet in .CSV format.
-	d. Use a screenshot to capture graphics. 
-	e. If the content poses any risk to a source, share and store it encrypted.
+	a. Print the document (on a non-networked printer) and shred it when no longer required. 
+	b. Copy and paste information received in Word or PDF format to a .txt or .rtf file. 
+	c. Copy and paste information from an Excel spreadsheet to a .txt or .csv file.
+	d. Capture images and graphics, for instance from Powerpoint, with a screenshot.
+	e. Retype a short document or message rather than distribute the original.
+	f. However you share the information, and wherever you store it, keep it encrypted when not in active use.
 	
-*Comments, suggestions, corrections and criticism are welcome*
-	
+/END	
   
