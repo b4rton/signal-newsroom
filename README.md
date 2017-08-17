@@ -85,6 +85,6 @@ A considered workflow in the newsroom can reduce those risks and limit the damag
 	d. Use a screenshot to capture graphics. 
 	e. If the content poses any risk to a source, share and store it encrypted.
 	
-*Comments, suggestions, corrections and criticism welcome*
+*Comments, suggestions, corrections and criticism are welcome*
 	
   
