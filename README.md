@@ -30,11 +30,11 @@ A considered workflow in the newsroom can reduce those risks and limit the damag
 	
 	- Set the computer to download and install updates automatically.
 	- Turn on the built in firewall, with strictest settings. 
-	- Turn on local storage encryption -- FileVault on Mac, BitLocker on Windows. Choose a strong, random passphrase. [Don't bother](https://www.wsj.com/articles/the-man-who-wrote-those-password-rules-has-a-new-tip-n3v-r-m1-d-1502124118) with c@Ps&S6mb0l$. A randomly generated 7-word phrase is stronger and easier to type. Purists call for use of [actual dice](http://world.std.com/~reinhold/diceware.html), but you probably won't. So let 1Password or LastPass make a strong passphrase. In a pinch, even an [online generator](https://passwordcreator.org/diceware.html) is better than trying to think of "random" words yourself.
+	- Turn on local storage encryption -- FileVault on Mac, BitLocker on Windows. Choose a strong passphrase. [Forget the old advice](https://www.wsj.com/articles/the-man-who-wrote-those-password-rules-has-a-new-tip-n3v-r-m1-d-1502124118) to use c@Ps & syMb01$. A randomly generated 6-word phrase is stronger, more memorable and easier to type. Don't try to think up a random phrase yourself. Humans are bad at that, and it matters. Purists say to use [actual dice](http://world.std.com/~reinhold/diceware.html), but you probably won't. So let 1Password or LastPass choose a passphrase, or make one [here](https://www.dmuth.org/diceware/?debug=6).
 	- Install Chrome (Signal Desktop requires it) but do not use it for browsing.
 	- Do not install or use any other software.
 	
-	c. Lock up the phone and computer as securely as possible when not in use.
+	c. Log off the computer, shut down the phone, and lock them in a physically secure space whenever you do not have eyes on them.
 	
 2. **Use secure Signal settings.**
 
