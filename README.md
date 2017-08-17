@@ -2,18 +2,18 @@
 ## Working draft 8/16/17
 ### By Barton Gellman
    
-Journalists have made growing use of [Signal Private Messenger](https://whispersystems.org/) as a channel for confidential sources to make contact and share information. Simple precautions in the newsroom make for a much safer Signal dropbox. Sources may take their own additional precautions, not covered here. 
+Journalists have made growing use of [Signal Private Messenger](https://whispersystems.org/), which runs on smartphones and desktop computers, as a newsroom dropbox. Confidential sources use this channel to make first contact, send information and develop ongoing relationships with journalists. Strong security comes built in with Signal, but additional precautions in the newsroom can make it safer for both sides. Confidential sources may take additional precautions, not covered here. 
   
 ## Risks
 
-Signal can make voice and video calls, but its main use as a newsroom dropbox is for text messages and attached documents. These present at least two kinds of risk.
+Signal makes voice and video calls, but its main use in newsgathering is for text messages and attached documents. These pose at least two kinds of risk.
 
-1. Signal can carry malware, just as email can. An infected file or link may compromise the Signal account, the device used to log into the account, or a network connected to the device. 
-2. Signal messages are strongly encrypted in transit, but not after they arrive. Incautious handling of information received may expose it to outside eyes.
+1. **Malware.** Like email, Signal can transmit malicious attachments or web links. Sources may send malware unknowingly. If the newsroom's smartphone or PC is compromised, outsiders may be able to take control of the Signal account, send malware or false messages to sources, monitor communications without leaving obvious signs, or tunnel into any newsroom network that is reachable from the infected Signal device. 
+2. **Exposure of content.** Signal messages are encrypted in transit but decrypted upon receipt. Incautious handling on the newsroom side may allow outside eyes to read the contents or identify a source.
 
 ## Precautions
 
-A considered workflow in the newsroom can reduce those risks and limit the damage if the system is compromised.
+These steps will reduce the risk and limit the damage of a successful intrusion into the Signal dropbox.
 
 1. **Secure the devices used for Signal**. 
 
@@ -70,11 +70,11 @@ A considered workflow in the newsroom can reduce those risks and limit the damag
 	- If you can place the secure workstation near the Signal Desktop machine, "airgap" the workstation. Switch off wifi, disconnect Ethernet cables, and consider removing the network hardware from the machine. Use an encrypted thumb drive or encrypted SD card to transfer incoming file attachments to the workstation. Reformat (erase) the thumb drive or SD card between uses. An SD card is safer. For maximum security, use an old digital camera or voice recorder to erase the SD card before and after each file transfer.
 	- If you cannot keep the workstation near the Signal Desktop machine, connect it to a dedicated network, as described above. Create a second, unlisted Signal account for the workstation. Forward file attachments from the public Signal account to the unlisted one.
 	
-5. **View attachments safely.** In order of preference, use these steps to reduce the risk that malware will allow an attacker to exfiltrate files from the workstation.
+5. **Options for safer viewing of attachments.** 
 
-	a. Use an "airgapped" workstation, as described above.
+	a. Use an "airgapped" workstation, as described above. 
 	b. Install a [Virtual Machine](https://lifehacker.com/5204434/the-beginners-guide-to-creating-virtual-machines-with-virtualbox) on the workstation. Switch off network access for the VM. Open attachments inside the VM, then use a "snapshot" to restore the VM to its original state. Remember to keep the VM software, including the guest operating system, up to date.
-	c. Before opening an attachment or clicking a link, check it against the [VirtusTotal](https://www.virustotal.com) database of known malicious files and sites. Technically proficient users should send a "hash" of a file attachment, not the file itself. 
+	c. Before opening an attachment or clicking a link, check it against the [VirtusTotal](https://www.virustotal.com) database of known malicious files and sites.
 	d. [***With caveat***]: Open the attachment in Google Docs. This protects your workstation from malware, but exposes your confidential information to a subpoena or a thief who steals your login credentials.
 	
 6. **Safely distribute information to colleagues.** When it comes time to share Signal content, save it in a safer format before allowing it onto a newsroom network.
