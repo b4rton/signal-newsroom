@@ -1,7 +1,6 @@
 # Signal as a Newsroom Dropbox
 ## By Barton Gellman
-
-*Comments and disputations welcome*
+*Updated 8/17/17. Comments welcome.*
 
 Individual journalists have for some time been using [Signal Private Messenger](https://whispersystems.org/), which runs on most smartphones and desktop computers, for secure communications with their sources. In a more recent trend, news organizations have begun to repurpose Signal as a dropbox for the general public. Prominent display of a newsroom-wide Signal account number invites anyone with a confidential tip to make first contact, find the right journalist, send information, and develop an ongoing reporter-source relationship. Signal offers strong encryption and a measure of anonymity. Newsrooms can make it a safer channel with a few additional precautions. 
   
@@ -75,18 +74,26 @@ A careful newsroom can reduce the risk and limit the damage of a successful intr
 5. **Open attachments with care** on the workstation, using one or more of these options. 
 
 	a. "Airgap" the workstation. An intruder cannot easily steal data from a machine that does not touch the Internet, even if the machine is compromised by malware. This is not an absolute defense, but it defeats many attacks.
+	
 	b. Install a [Virtual Machine](https://lifehacker.com/5204434/the-beginners-guide-to-creating-virtual-machines-with-virtualbox) on the workstation. Keep the host machine air-gapped, or switch off network access for the guest VM. Take a snapshot of the guest VM in its original, clean state. Open attachments inside the VM, then restore the clean snapshot. Install software updates on the clean snapshot as they become available.
+	
 	c. Before opening an attachment or clicking a link, check it against the [VirtusTotal](https://www.virustotal.com) database of known malicious files and sites.
+	
 	d. [***With important caveat***]: Open the attachment in Google Docs. This protects your workstation from malware, but it places unencrypted data on Google servers. A subpoena or hacker might obtain it there. 
 	
 6. **Share information with colleagues in a safer format** to scrub potential malware.  
 
 	a. Print the document (on a non-networked printer) and shred it when no longer required. 
-	b. Copy and paste information received in Word or PDF format to a .txt or .rtf file. 
-	c. Copy and paste information from an Excel spreadsheet to a .txt or .csv file.
-	d. Capture images and graphics, for instance from Powerpoint, with a screenshot.
-	e. Retype a short document or message rather than distribute the original.
-	f. However you share the information, and wherever you store it, keep it encrypted when not in active use.
 	
+	b. Copy and paste information received in Word or PDF format to a .txt or .rtf file. 
+	
+	c. Copy and paste information from an Excel spreadsheet to a .txt or .csv file.
+	
+	d. Capture images and graphics, for instance from Powerpoint, with a screenshot.
+	
+	e. Retype a short document or message rather than distribute the original.
+	
+	f. However you share the information, and wherever you store it, keep it encrypted when not in active use.
+		
 /END	
   
