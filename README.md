@@ -70,14 +70,14 @@ A considered workflow in the newsroom can reduce those risks and limit the damag
 	- If you can place the secure workstation near the Signal Desktop machine, "airgap" the workstation. Switch off wifi, disconnect Ethernet cables, and consider removing the network hardware from the machine. Use an encrypted thumb drive or encrypted SD card to transfer incoming file attachments to the workstation. Reformat (erase) the thumb drive or SD card between uses. An SD card is safer. For maximum security, use an old digital camera or voice recorder to erase the SD card before and after each file transfer.
 	- If you cannot keep the workstation near the Signal Desktop machine, connect it to a dedicated network, as described above. Create a second, unlisted Signal account for the workstation. Forward file attachments from the public Signal account to the unlisted one.
 	
-4. **View attachments safely.** In order of preference, use these steps to reduce the risk that malware will allow an attacker to exfiltrate files from the workstation.
+5. **View attachments safely.** In order of preference, use these steps to reduce the risk that malware will allow an attacker to exfiltrate files from the workstation.
 
 	a. Use an "airgapped" workstation, as described above.
 	b. Install a [Virtual Machine](https://lifehacker.com/5204434/the-beginners-guide-to-creating-virtual-machines-with-virtualbox) on the workstation. Switch off network access for the VM. Open attachments inside the VM, then use a "snapshot" to restore the VM to its original state. Remember to keep the VM software, including the guest operating system, up to date.
 	c. Before opening an attachment or clicking a link, check it against the [VirtusTotal](https://www.virustotal.com) database of known malicious files and sites. Technically proficient users should send a "hash" of a file attachment, not the file itself. 
 	d. [***With caveat***]: Open the attachment in Google Docs. This protects your workstation from malware, but exposes your confidential information to a subpoena or a thief who steals your login credentials.
 	
-5. **Safely distribute information to colleagues.** When it comes time to share Signal content, save it in a safer format before allowing it onto a newsroom network.
+6. **Safely distribute information to colleagues.** When it comes time to share Signal content, save it in a safer format before allowing it onto a newsroom network.
 
 	a. Print the document (on a non-networked printer). 
 	b. Copy and paste from an incoming Word or PDF attachment to a .TXT or .RTF file. 
