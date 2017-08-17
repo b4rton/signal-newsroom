@@ -2,7 +2,7 @@
 ## By Barton Gellman
 *Updated 8/17/17. Comments welcome.*
 
-Individual journalists have for some time been using [Signal Private Messenger](https://whispersystems.org/), which runs on most smartphones and desktop computers, for secure communications with their sources. In a more recent trend, news organizations have begun to repurpose Signal as a dropbox for the general public. Prominent display of a newsroom-wide Signal account number invites anyone with a confidential tip to make first contact, find the right journalist, send information, and develop an ongoing reporter-source relationship. Signal offers strong encryption and a measure of anonymity. Newsrooms can make it a safer channel with a few additional precautions. 
+Individual journalists have used [Signal Private Messenger](https://whispersystems.org/) for some time to communicate with confidential sources. Ordinarily this requires a prior relationship and exchange of telephone numbers between reporter and source. More recently, news organizations have begun to repurpose Signal as a dropbox for tips from the general public to the newsroom at large. By publishing the telephone number of a newsroom-wide Signal account, they offer potential sources a secure way to make first contact, find the right reporter and send information in any electronic form. Although Signal has strong security features, a few precautions can make it even safer. 
   
 ## Risks
 
