@@ -18,8 +18,10 @@ Signal can make voice and video calls, but reporters and sources more commonly u
 
 The manager of a newsroom's Signal account can greatly reduce the risk and limit the damage of a successful intrusion
 
-1. **Secure the devices used for Signal**. 
+1. **Secure the devices used for Signal**
+
 	a. *Dedicated iPhone* 
+	
 	- Run the Signal app on a freshly wiped iPhone (Android is harder to secure) and apply iOS and Signal updates without delay. 
 	- Do not store Contacts on the phone, even for Signal sources. Keep them elsewhere. In general, store useful information and source identifiers somewhere else and remove it from the Signal device as soon as possible. This limits the damage if the iPhone is stolen or lost.
 	- Use the Settings app to harden the iPhone. 
