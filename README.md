@@ -1,44 +1,50 @@
 # Signal as a Newsroom Dropbox
 ## By Barton Gellman
-*Updated 8/17/17. Comments welcome.*
+*Updated 8/18/17. Comments welcome.*
 
-Individual journalists have used [Signal Private Messenger](https://whispersystems.org/) for some time to communicate with confidential sources. Ordinarily this requires a prior relationship and exchange of telephone numbers between reporter and source. More recently, news organizations have begun to repurpose Signal as a dropbox for tips from the general public to the newsroom at large. By publishing the telephone number of a newsroom-wide Signal account, they offer potential sources a secure way to make first contact, find the right reporter and send information in any electronic form. Although Signal has strong security features, a few precautions can make it even safer. 
+Individual journalists have made increasing use of [Signal Private Messenger](https://whispersystems.org/) to talk to confidential sources. Ordinarily this requires a prior relationship and an exchange of mobile telephone numbers. News organizations have recently begun to repurpose Signal as a dropbox for tips from the general public to the newsroom at large. A single, newsroom-wide account, displayed prominently on a web site, offers potential sources a way to make first contact, find the right reporter and send information in relative safety. Signal's built-in features offer strong protections, but newsrooms can make it safer for source and journalist alike. This guide tries to strike a tolerable balance of security and usability. When the stakes are very high, a newsroom can do more. In time, based on expert suggestions I have already received, a more advanced guide may follow.
   
 ## Risks
 
-Signal makes voice and video calls, but newsroom use has focused mainly on text messages and documents sent as attachments. These pose at least three kinds of risk.
+Signal can make voice and video calls, but reporters and sources more commonly use it for text messages and transmission of documents. These pose at least three kinds of risk.
 
-1. **Malware.** Like email, Signal can transmit malicious attachments or web links. Sources may send malware unknowingly. If the newsroom's smartphone or PC is compromised, outsiders may be able to take control of the Signal account, send malware or false messages to sources, monitor communications without leaving obvious signs, or tunnel into any newsroom network that is reachable from the infected Signal device. 
+1. **Malware.** A source may send malicious links or attachments, knowingly or not. If successful in compromising the smartphone or PC used to manage the newsroom's Signal account, an intruder may be able to lock journalists out, read old communications, send fake messages or malware to sources, monitor live communications or tunnel into a newsroom's private network. 
 
-2. **Exposure of content.** Signal messages are encrypted in transit but decrypted upon receipt. Incautious handling on the newsroom side may allow outside eyes to read Signal communications after they arrive.
+2. **Exposure of content.** Though encrypted in transit, Signal messages are decrypted upon receipt. Incautious handling on the newsroom side may allow outside eyes to read Signal communications after they arrive.
 
 3. **Exposure of sources.** In either of the first two scenarios, an adversary may learn enough to identify a confidential source by name, telephone number or job description.
 
 ## Precautions
 
-A careful newsroom can reduce the risk and limit the damage of a successful intrusion into its Signal dropbox. Many of these precautions could do the same for journalists with individual Signal accounts.
+The manager of a newsroom's Signal account can greatly reduce the risk and limit the damage of a successful intrusion
 
 1. **Secure the devices used for Signal**. 
-
-	a. *Dedicated smartphone*. Run the Signal app on a freshly wiped iPhone. (Android phones are harder to secure.) 
+	a. *Dedicated iPhone* 
+	- Run the Signal app on a freshly wiped iPhone (Android is harder to secure) and apply iOS and Signal updates without delay. 
+	- Do not store Contacts on the phone, even for Signal sources. Keep them elsewhere. In general, store useful information and source identifiers somewhere else and remove it from the Signal device as soon as possible. This limits the damage if the iPhone is stolen or lost.
+	- Use the Settings app to harden the iPhone. 
+		- In the first tab (AppleID, iCloud, iTune & App Store): Create a new AppleID. Log into iTunes & App Store. Turn on Automatic Downloads for Updates only. Do **not** log into iCloud. 
+		- In Wi-Fi, turn on Ask to Join Networks. Do not join any network other than the one described in Section 3 below.
+		- In Bluetooth, switch it off
+		- In Cellular, turn on Cellular Data. Below that, disable it for every app but Signal. You will not see Signal on the list until you download it from the App Store.
+		- In Control Center, turn off Access on Lock Screen
+		- In General, scroll down to Restrictions. Disallow all apps and actions except for Camera and Installing Apps, which are needed to set up Signal. Confirm especially that Safari, Siri and AirDrop are disallowed.
+		- In Display & Brightness, set Auto-Lock to 30 seconds
+		- In TouchID & Passcode, set a [longer numeric PIN](https://theintercept.com/2016/02/18/passcodes-that-can-defeat-fbi-ios-backdoor/) than Apple's 6-digit default, enroll no fingerprints, leave off all three options for TouchID, set Require Passcode to Immediately, turn off all options for Allow Access When Locked, turn on Erase Data after 10 failed attempts.
+		- In Privacy, switch off Location Services. Later, you will say yes when Signal asks for access to the Microphone, Camera and (your empty) Contacts list.
+		- In Mail, do not set up any account, including Google and any newsroom Exchange Server.
+	- Open the App store and install Signal. Do not download any other apps.  
+	- Do not use the iPhone for anything but Signal. Do not make phone calls, send ordinary text messages, browse the web or log into any online service.
 	
-	- Install iOS updates as soon as notice appears in the Settings app. 
-	- Do not store Contacts on the phone, even for Signal sources. It is much safer to keep them elsewhere. If you must store source telephone numbers, list them under non-revealing pseudonyms such as "Source A" and "Source B." But really, don't.
-	- Go through the Settings app to enhance privacy and security. 
-		- Do NOT log into iCloud. (It will back up the Signal database.) Set a [longer numeric PIN](https://theintercept.com/2016/02/18/passcodes-that-can-defeat-fbi-ios-backdoor/) and turn ON "Erase Data" after 9 failed unlock attempts. Disable most or all options under Lock Screen Access. Set Auto-Lock to 30 seconds. Turn OFF TouchID and Location Services. Create a new Apple ID with a throwaway email; you'll need it to download Signal from the App Store. Say yes when Signal asks for access to the Microphone, Camera and (your empty) Contacts list.
-	- Install no software other than Signal. 
-	- Do not use the iPhone for ordinary telephone calls, web browsing, email, taking or storing photos, or any other purpose. 
-	- During Signal video calls, do not point your camera at anything that might reveal where you store the iPhone.
+	b. *Dedicated computer*
 	
-	b. *Dedicated computer*. Run Signal Desktop on a freshly wiped computer with the latest operating system. 
-	
-	- Set the computer to download and install updates automatically.
+	- Set up a freshly wiped computer with the latest operating system. Turn on automatic updates.
 	- Turn on the built in firewall, with strictest settings. 
-	- Turn on local storage encryption -- FileVault on Mac, BitLocker on Windows. Choose a strong passphrase. [Forget the old advice](https://www.wsj.com/articles/the-man-who-wrote-those-password-rules-has-a-new-tip-n3v-r-m1-d-1502124118) to use c@Ps & syMb01$. A randomly generated 6-word phrase is stronger, more memorable and easier to type. Don't try to think up a random phrase yourself. Humans are bad at that, and it matters. Purists say to use [actual dice](http://world.std.com/~reinhold/diceware.html), but you probably won't. So let 1Password or LastPass choose a passphrase, or make one [here](https://www.dmuth.org/diceware/?debug=6).
-	- Install Chrome (Signal Desktop requires it) but do not use it for browsing.
-	- Do not install or use any other software.
+	- Turn on local storage encryption -- FileVault on Mac, BitLocker on Windows. 
+	- Create a strong login passphrase. [Forget the old advice](https://www.wsj.com/articles/the-man-who-wrote-those-password-rules-has-a-new-tip-n3v-r-m1-d-1502124118) to use c@Ps & syMb01$. A randomly generated 6-word phrase is stronger, more memorable and easier to type. Humans are not good at generating random words. Don't try. Purists call for using [actual dice](http://world.std.com/~reinhold/diceware.html) to pick from a word list, but you can let 1Password, LastPass or [this site](https://www.dmuth.org/diceware/?debug=6) generate your passphrase.
+	- Install Chrome, Chrome's Signal Desktop extension, and no other software. Do not use Chrome for browsing.
 	
-	c. Log off the computer, shut down the phone, and lock them in a physically secure space whenever you do not have eyes on them.
+	c. Log off the computer, shut down the phone, and place them behind lock and key when not in use.
 	
 2. **Set Signal preferences for maximum privacy.**
 
