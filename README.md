@@ -24,7 +24,8 @@ A careful newsroom can reduce the risk and limit the damage of a successful intr
 	
 	- Install iOS updates as soon as notice appears in the Settings app. 
 	- Do not store Contacts on the phone, even for Signal sources. It is much safer to keep them elsewhere. If you must store source telephone numbers, list them under non-revealing pseudonyms such as "Source A" and "Source B." But really, don't.
-	- Go through the Settings app to enhance privacy and security. Do NOT log into iCloud. (It will back up the Signal database.) Set a [longer numeric PIN](https://theintercept.com/2016/02/18/passcodes-that-can-defeat-fbi-ios-backdoor/) and turn ON "Erase Data" after 9 failed unlock attempts. Disable most or all options under Lock Screen Access. Set Auto-Lock to 30 seconds. Turn OFF TouchID and Location Services. Create a new Apple ID with a throwaway email; you'll need it to download Signal from the App Store. Say yes when Signal asks for access to the Microphone, Camera and (your empty) Contacts list.
+	- Go through the Settings app to enhance privacy and security. 
+		- Do NOT log into iCloud. (It will back up the Signal database.) Set a [longer numeric PIN](https://theintercept.com/2016/02/18/passcodes-that-can-defeat-fbi-ios-backdoor/) and turn ON "Erase Data" after 9 failed unlock attempts. Disable most or all options under Lock Screen Access. Set Auto-Lock to 30 seconds. Turn OFF TouchID and Location Services. Create a new Apple ID with a throwaway email; you'll need it to download Signal from the App Store. Say yes when Signal asks for access to the Microphone, Camera and (your empty) Contacts list.
 	- Install no software other than Signal. 
 	- Do not use the iPhone for ordinary telephone calls, web browsing, email, taking or storing photos, or any other purpose. 
 	- During Signal video calls, do not point your camera at anything that might reveal where you store the iPhone.
